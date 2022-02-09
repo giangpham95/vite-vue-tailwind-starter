@@ -11,7 +11,12 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.vue",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx,.vue --fix",
     "prepare": "husky install",
-    "test:unit": "jest"
+    "test:unit": "jest",
+    "test:e2e": "playwright test",
+    "test:e2e:debug": "playwright test --debug",
+    "test:e2e:chromium": "playwright test --project=chrominum",
+    "test:e2e:webkit": "playwright test --project=webkit",
+    "test:e2e:firefox": "playwright test --project=firefox"
   },
   "dependencies": {
     "vue": "^3.2.25"
@@ -19,6 +24,7 @@
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
+    "@playwright/test": "^1.18.1",
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.11.0",
     "@typescript-eslint/parser": "^5.11.0",
