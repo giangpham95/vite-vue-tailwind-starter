@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
     "types": ["jest"],
+    "baseUrl": "../../",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": [
     "../../src/**/*.ts",
